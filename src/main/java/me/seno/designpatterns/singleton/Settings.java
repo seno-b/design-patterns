@@ -2,13 +2,13 @@ package me.seno.designpatterns.singleton;
 
 public class Settings {
 
-    static Settings instance = new Settings();
+    private Settings() {}
 
-    private Settings() {
-
+    static class SettingsHolder() {
+        private static final Settings INSTANCE = new Settings();
     }
 
     public static Settings getInstance() {
-        return instance;
+        return SettingsHolder.INSTANCE;
     }
 }
