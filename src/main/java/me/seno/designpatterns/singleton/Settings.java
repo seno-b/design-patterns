@@ -4,7 +4,7 @@ public class Settings {
 
     private Settings() {}
 
-    static class SettingsHolder() {
+    static class SettingsHolder {
         private static final Settings INSTANCE = new Settings();
     }
 
