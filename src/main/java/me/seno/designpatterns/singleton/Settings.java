@@ -8,7 +8,6 @@ public class Settings implements Serializable {
 
     static class SettingsHolder {
         private static final Settings INSTANCE = new Settings();
-
     }
 
     public static Settings getInstance() {
