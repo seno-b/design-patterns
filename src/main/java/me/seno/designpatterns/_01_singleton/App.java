@@ -1,7 +1,6 @@
-package me.seno.designpatterns.singleton;
+package me.seno.designpatterns._01_singleton;
 
 import java.io.*;
-import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
 
 public class App {

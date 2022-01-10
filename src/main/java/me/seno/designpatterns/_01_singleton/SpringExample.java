@@ -1,4 +1,4 @@
-package me.seno.designpatterns.singleton;
+package me.seno.designpatterns._01_singleton;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
