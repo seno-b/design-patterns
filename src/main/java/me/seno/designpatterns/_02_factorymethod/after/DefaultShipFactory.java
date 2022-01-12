@@ -22,4 +22,13 @@ public abstract class DefaultShipFactory implements ShipFactory{
     public void sendEmailTo(String email, Ship ship) {
         System.out.println(ship.getName() + " 다 만들었습니다.");
     }
+
+    @Override
+    public Ship orderShip(String name, String email) {
+        this.validate(name, email);
+        this.prepareFor(name);
+        Ship ship = createShip(name);
+        this.sendEmailTo(email, ship);
+        return ship;
+    }
 }
