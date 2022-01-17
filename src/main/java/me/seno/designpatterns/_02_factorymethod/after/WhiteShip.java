@@ -4,6 +4,7 @@ public class WhiteShip extends Ship{
     public WhiteShip() {
 
     }
+
     public WhiteShip(String name) {
         setColor("white");
         setName(name);

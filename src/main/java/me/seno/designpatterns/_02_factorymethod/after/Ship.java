@@ -61,6 +61,8 @@ public class Ship {
                 "name='" + name + '\'' +
                 ", color='" + color + '\'' +
                 ", logo='" + logo + '\'' +
+                ", anchor=" + anchor +
+                ", wheel=" + wheel +
                 '}';
     }
 }
