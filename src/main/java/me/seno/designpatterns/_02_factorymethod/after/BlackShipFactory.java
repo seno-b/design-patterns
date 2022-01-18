@@ -6,4 +6,5 @@ public class BlackShipFactory extends DefaultShipFactory {
     public Ship createShip(String name) {
         return new BlackShip(name);
     }
+
 }
