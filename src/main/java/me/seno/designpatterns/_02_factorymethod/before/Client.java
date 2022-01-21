@@ -8,6 +8,7 @@ public class Client {
 
         Ship blackship = ShipFactory.orderShip("Blackship", "keesun@mail.com");
         System.out.println(blackship);
+
     }
 
 }
