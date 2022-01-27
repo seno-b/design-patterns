@@ -8,4 +8,12 @@ public class DetailPlan {
     this.day = day;
     this.plan = plan;
   }
+
+  @Override
+  public String toString() {
+    return "DetailPlan{" +
+        "day=" + day +
+        ", plan='" + plan + '\'' +
+        '}';
+  }
 }

@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class TourPlan {
+
   private String title;
   private LocalDate startDate;
   private int nights;
@@ -67,5 +68,31 @@ public class TourPlan {
 
   public void addPlan(int day, String plan) {
     this.detailPlans.add(new DetailPlan(day, plan));
+  }
+
+  public TourPlan() {
+
+  }
+
+  public TourPlan(String title, LocalDate startDate, int nights, int days, String whereToStay,
+      List<DetailPlan> detailPlans) {
+    this.title = title;
+    this.startDate = startDate;
+    this.nights = nights;
+    this.days = days;
+    this.whereToStay = whereToStay;
+    this.detailPlans = detailPlans;
+  }
+
+  @Override
+  public String toString() {
+    return "TourPlan{" +
+        "title='" + title + '\'' +
+        ", startDate=" + startDate +
+        ", nights=" + nights +
+        ", days=" + days +
+        ", whereToStay='" + whereToStay + '\'' +
+        ", detailPlans=" + detailPlans +
+        '}';
   }
 }
